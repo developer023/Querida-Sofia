@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para Sofía</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background-image: url('/tumblr_452bfcab68657c87616fb7455c0559cb_40e7bf52_400\ \(1\).webp'); /* Fondo de la página */
+      background-size: cover; /* Asegura que la imagen cubra toda la página */
+      background-position: center; /* Centra la imagen */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    #mensaje-inicial {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 80%;
+      max-width: 600px;
+      color: #333; /* Color del texto */
+      font-size: 1.5rem;
+      text-align: center;
+      border: 5px solid #b08d57; /* Borde */
+      border-radius: 10px; /* Esquinas redondeadas */
+      padding: 20px; /* Espaciado interno */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      background-size: cover;
+      background-color: #fff;
+    }
+
+    #contenido-carta {
+      display: none;
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border: 5px solid #b08d57;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+    }
+
+    #contenido-carta p {
+      color: #333;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      #contenido-carta {
+        width: 90%;
+        padding: 15px;
+      }
+      #mensaje-inicial {
+        width: 90%;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #contenido-carta p,
+      #mensaje-inicial {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mensaje inicial -->
+  <div id="mensaje-inicial">
+    Querida Sofía, no me dijiste que escribiera esta carta, pero te la mereces por ser tan hermosa.
+  </div>
+
+  <!-- Carta principal -->
+  <div id="contenido-carta">
+    <p>
+      Querida Sofía, me dijiste que escribiera algo memorable, así que aquí estás. Recuerdo perfectamente el primer clic entre nosotros. Fui a tu casa por primera vez y la emoción me invadía. Pero al llegar, vi lo hermosa y preciosa que eres, y te juro que quedé locamente enamorado de ti al instante. En ese momento, no sabía lo importante que te convertirías en mi vida.
+    </p>
+
+    <p>
+      A veces, me cuesta creer que una chica tan hermosa y especial sea mi compañera. Quiero que sepas cuánto te quiero y lo valiosa que eres para mí. Deseo que estemos juntos por mucho tiempo. Sé que no siempre será fácil, pero estoy dispuesto a hacer lo necesario para que esto funcione.
+    </p>
+    <p>
+      Si estás de acuerdo, considera esto nuestro nuevo contrato.
+    </p>
+    <p>
+      Te amaré siempre, Sofía. 💌✨
+    </p>
+  </div>
+
+  <script>
+    // Mostrar el mensaje inicial por 10 segundos y luego mostrar la carta
+    setTimeout(function() {
+      document.getElementById('mensaje-inicial').style.display = 'none';
+      document.getElementById('contenido-carta').style.display = 'block';
+    }, 8000); // 10 segundos
+  </script>
+
+</body>
+</html>
